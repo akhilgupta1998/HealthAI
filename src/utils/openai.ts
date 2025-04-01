@@ -1,8 +1,11 @@
-
 import OpenAI from 'openai';
 
-// Use the provided API key
-const apiKey = 'OPENAI_API_KEY_PLACEHOLDER ';
+// Use the environment variable for API key
+const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
+
+if (!apiKey) {
+  throw new Error('OpenAI API key is not set in environment variables');
+}
 
 export const openai = new OpenAI({
   apiKey: apiKey,
