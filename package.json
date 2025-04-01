@@ -1,8 +1,12 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "health-ai-guardian",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "Health AI Guardian - A comprehensive health and wellness application",
+  "keywords": ["health", "ai", "wellness", "fitness", "nutrition"],
+  "author": "Akhil Gupta",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
