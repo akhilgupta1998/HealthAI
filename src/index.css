@@ -1,0 +1,180 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 33% 99%;
+    --foreground: 210 38% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 38% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 38% 12%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 210 38% 12%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 20% 60%;
+
+    --accent: 346 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 210 38% 12%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 210 38% 12%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 210 38% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 210 38% 10%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 210 38% 10%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 38% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 210 38% 15%;
+    --muted-foreground: 210 20% 65%;
+
+    --accent: 346 83% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 38% 15%;
+    --input: 210 38% 15%;
+    --ring: 262 83% 58%;
+
+    --sidebar-background: 210 38% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 38% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 210 38% 15%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-medium tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply bg-white/80 dark:bg-black/40 backdrop-blur-lg border border-white/20 dark:border-black/20 shadow-sm;
+  }
+  
+  .glass-card {
+    @apply glass-morphism rounded-xl hover:shadow-md transition-all duration-300;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .animated-border {
+    @apply relative before:absolute before:inset-0 before:z-[-1] before:rounded-[inherit] before:p-[1px] before:bg-gradient-to-r before:from-primary/50 before:to-accent/50 before:opacity-0 hover:before:opacity-100 before:transition-opacity;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .feature-icon-container {
+    @apply relative w-16 h-16 flex items-center justify-center rounded-full bg-secondary text-primary mb-6;
+  }
+  
+  .feature-icon {
+    @apply w-8 h-8;
+  }
+  
+  .highlight-container {
+    @apply relative inline-block;
+  }
+  
+  .highlight {
+    @apply bg-accent/10 text-accent dark:text-accent px-1 py-0.5 rounded;
+  }
+
+  .premium-card {
+    @apply rounded-2xl p-6 bg-white dark:bg-gray-900 shadow-xl border border-gray-100 dark:border-gray-800 transition-all duration-300 hover:shadow-2xl;
+  }
+  
+  .premium-input {
+    @apply rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+  
+  .premium-button {
+    @apply rounded-lg bg-primary text-white font-medium px-5 py-2.5 hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
