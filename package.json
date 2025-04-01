@@ -8,13 +8,9 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-<<<<<<< HEAD
     "preview": "vite preview",
     "ngrok": "ngrok http 8080 --log=stdout",
     "start": "vite --port 8080 --host"
-=======
-    "preview": "vite preview"
->>>>>>> 26af89be74df9c5f1f8e662624d8361fb82618ac
   },
   "dependencies": {
     "@clerk/clerk-react": "^5.24.1",
@@ -50,11 +46,8 @@
     "@supabase/supabase-js": "^2.49.1",
     "@tanstack/react-query": "^5.56.2",
     "@types/react-helmet": "^6.1.11",
-<<<<<<< HEAD
     "@types/uuid": "^10.0.0",
     "axios": "^1.8.4",
-=======
->>>>>>> 26af89be74df9c5f1f8e662624d8361fb82618ac
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -73,10 +66,7 @@
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.53.0",
-<<<<<<< HEAD
     "react-hot-toast": "^2.5.2",
-=======
->>>>>>> 26af89be74df9c5f1f8e662624d8361fb82618ac
     "react-icons": "^5.5.0",
     "react-resizable-panels": "^2.1.3",
     "react-router-dom": "^6.26.2",
@@ -84,10 +74,7 @@
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",
-<<<<<<< HEAD
     "uuid": "^11.1.0",
-=======
->>>>>>> 26af89be74df9c5f1f8e662624d8361fb82618ac
     "vaul": "^0.9.3",
     "zod": "^3.23.8"
   },
@@ -98,16 +85,13 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
-    "eslint-plugin-react-refresh": "^0.4.9",
-    "globals": "^15.9.0",
-    "lovable-tagger": "^1.1.7",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.11",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2",
+    "vite": "^5.1.4"
   }
 }
